@@ -15,6 +15,9 @@ The function should:
   Example createMenuItem('tacos', 8, 'Lunch') should return {name: 'tacos', price: 8, category: 'Lunch'}
 */
 
+console.log(createMenuItem('Quesadilla', '5', 'lunch'));
+console.log(createMenuItem('BB&J', '2', 'lunch'));
+console.log(createMenuItem('Pizza', '3', 'lunch'))
 
 function createMenuItem(name, price, category){
   return {name, price, category};
@@ -104,10 +107,14 @@ Use the addReview function below to do the following:
 */
 
 
-function addReview(array, name, rating, feedback){
-  addReview.push({name: 'Rose', rating: 4, feedback: 'Food was pretty good but the service could have been better.'});
+function addReview(reviews, name, rating, feedback){
+  const newReview = {name:name,
+  rating: rating,
+  feedback: feedback}
+  reviews.push(newReview)
+return reviews
 }
-
+console.log(addReview(reviews))
 
 
 
